@@ -47,10 +47,10 @@ Once flashing is complete, remove the microSD card.
 ### 4. Connect Wi-Fi
 Your gateway will most likely connect to the Internet and also communicate with all your devices via Wi-Fi, which needs to be set up next.
 
-When the gateway starts up it will create a Wi-Fi hotspot called "**WebThings Gateway XXXX**" (where XXXX are four digits from your RPi's MAC address). Use a personal computer or smartphone to scan for and connect to that wireless network.
+When the gateway starts up it will create a Wi-Fi hotspot called "**WebThings Gateway XXXX**" (where XXXX are four digits from your Raspberry Pi's MAC address). Use a personal computer or smartphone to scan for and connect to that wireless network.
 <img src="./images/wifi_ssid.png" width="300">
 
-A captive portal page will appear, showing nearby Wi-Fi networks.  
+A captive portal page will appear, showing nearby Wi-Fi networks.
 
 ![Connect Wi-Fi](./images/connect_wifi.png)
 
@@ -63,7 +63,7 @@ Select the desired network and enter the password when prompted.  The "Connectin
 
 ### 5. Choose Subdomain
 
-After you've connected the RPi to your wireless network, you should ensure that your laptop/tablet/smartphone is connected to the same Wi-Fi network and then navigate to **http://gateway.local** in your web browser.
+After you've connected the Raspberry Pi to your wireless network, you should ensure that your laptop/tablet/smartphone is connected to the same Wi-Fi network and then navigate to **http://gateway.local** in your web browser.
 
 You will then be given the option to register a free subdomain to safely access your gateway over the Internet using a [secure tunnelling service](https://github.com/mozilla-iot/wiki/wiki/Gateway-Remote-Access) provided by Mozilla.
 
@@ -77,17 +77,17 @@ Enter your choice of subdomain and an email address in case you need to retrieve
  * If http://gateway.local fails to load (e.g. on Android or Windows) you can look up the IP address of the gateway on your home router and use that instead (look for a hostname of "gateway" or a MAC address starting with "b8:27:eb".
  * If neither http://gateway.local or http://<IP_address> will load in your browser, check to make sure your computer is definitely connected to the same Wi-Fi network you connected the gateway to.
  * If you have previously registered a subdomain you want to re-use, enter the subdomain and the email address you used to register it and follow the on-screen instructions to re-claim it.
- 
+
 ### 6. Create User Account
 Once you have registered your subdomain you should be automatically redirected to the next step of the setup process, which is to create your first user account on the gateway. This is how you'll access the gateway to discover, add, monitor and manage all your connected devices.  Enter your name, email address and a password then click "Next".
 
 ![Create user account](./images/create_user_account.png)
- 
+
 ***Note:*** You can create additional user accounts later.
- 
+
 ### Success!
 You should then be redirected to an empty "Things" screen of the gateway where you can start to add devices.
- 
+
 ![Things screen](./images/things_screen.png)
- 
+
 See the [WebThings Gateway User Guide](./gateway-user-guide.md) to learn how to use your gateway including adding and managing smart devices, creating rules to automate your home, using logging to track data from your devices, and more.
